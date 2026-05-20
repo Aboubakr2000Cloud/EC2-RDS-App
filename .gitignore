@@ -1,0 +1,6 @@
+config.env
+*.pem
+.deploy_state
+__pycache__/
+venv/
+*.pyc

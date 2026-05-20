@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Week 14 — EC2 + RDS</title></head>
+<body>
+  <h1>Weather Log — EC2 + RDS</h1>
+  <form method="POST" action="/log">
+    <input type="text" name="city" placeholder="City" required>
+    <input type="number" name="temperature" placeholder="Temperature" step="0.1" required>
+    <button type="submit">Add Log</button>
+  </form>
+  <hr>
+  <table border="1">
+    <tr><th>ID</th><th>City</th><th>Temperature</th><th>Recorded At</th></tr>
+    {% for log in logs %}
+    <tr>
+      <td>{{ log.id }}</td>
+      <td>{{ log.city }}</td>
+      <td>{{ log.temperature }}°C</td>
+      <td>{{ log.recorded_at }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
