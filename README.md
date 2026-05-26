@@ -271,7 +271,7 @@ ASG
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/<your-username>/ec2-rds-app.git
+git clone https://github.com/Aboubakr2000Cloud/ec2-rds-app.git
 cd ec2-rds-app
 ```
 
